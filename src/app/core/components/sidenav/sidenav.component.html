@@ -1,0 +1,10 @@
+<md-sidenav-container class="xyzzy2-sidenav--container" (backdropClick)="close.emit()">
+  <md-sidenav #sidenav class="xyzzy2-sidenav--container__sidenav" [opened]="open" [disableClose]="canClose" [mode]="mode">
+    <md-nav-list class="xyzzy2-sidenav--container__list">
+      <ng-content></ng-content>
+    </md-nav-list>
+  </md-sidenav>
+  <main class="xyzzy2-app--container__content">
+    <router-outlet></router-outlet>
+  </main>
+</md-sidenav-container>

@@ -1,4 +1,7 @@
 {
+  "extends": [
+    "rxjs-tslint-rules"
+  ],
   "rulesDirectory": [
     "node_modules/codelyzer"
   ],
@@ -117,13 +120,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "xyzzy2",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "xyzzy2",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
@@ -137,6 +140,17 @@
     "directive-class-suffix": true,
     "no-access-missing-member": true,
     "templates-use-public": true,
-    "invoke-injectable": true
+    "invoke-injectable": true,
+
+    "rxjs-add": {
+      "options": [{
+        "allowElsewhere": false,
+        "allowUnused": false,
+        "file": "./src/rx.ts"
+      }],
+      "severity": "error"
+    },
+    "rxjs-no-subject-unsubscribe": true,
+    "rxjs-no-wholesale": true
   }
 }

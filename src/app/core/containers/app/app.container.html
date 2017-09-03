@@ -1,0 +1,6 @@
+<xyzzy2-toolbar [menuCollapsed]="(disabledSideNavClose$ | async) === false" (openMenu)="openSidenav()"></xyzzy2-toolbar>
+<xyzzy2-sidenav [open]="showSidenav$ | async" [canClose]="(disabledSideNavClose$ | async) === false" [mode]="sidenavMode$ | async" (close)="closeSidenav()">
+  <xyzzy2-navitem [routerLink]="'game'" (activate)="closeSidenav()">
+    Game Lobby
+  </xyzzy2-navitem>
+</xyzzy2-sidenav>

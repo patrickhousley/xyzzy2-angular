@@ -1,0 +1,15 @@
+@import '../../../../theme';
+
+:host {
+  width: 100%;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.xyzzy2-navitem {
+  color: mat-color($xyzzy2-app-primary);
+
+  &--active {
+    color: mat-color($xyzzy2-app-accent);
+  }
+}
