@@ -2,7 +2,7 @@
   "name": "xyzzy2-angular",
   "version": "1.0.0",
   "license": "CC-BY-NC-SA-2.0",
-  "description": "Web and API repository for the Xyzzy2 project.",
+  "description": "Angular front-end repository for the Xyzzy2 project.",
   "author": "Patrick Housley <patrick.f.housley@gmail.com>",
   "repository": {
     "url": "https://github.com/patrickhousley/xyzzy2-angular",
